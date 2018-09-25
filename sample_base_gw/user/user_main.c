@@ -66,7 +66,7 @@ OPERATE_RET get_file_data_cb(IN CONST FW_UG_S *fw, IN CONST UINT_T total_len, IN
 // 网关升级流程结果通知
 VOID upgrade_notify_cb(IN CONST FW_UG_S *fw, IN CONST INT_T download_result, IN PVOID_T pri_data)
 {
-    
+   PR_DEBUG("gw upgrade end..\n"); 
 }
 
 // 子设备OTA升级通知
@@ -96,7 +96,7 @@ OPERATE_RET dev_get_file_data_cb(IN CONST FW_UG_S *fw, IN CONST UINT_T total_len
 // 终端设备网关升级流程结果通知
 VOID dev_upgrade_notify_cb(IN CONST FW_UG_S *fw, IN CONST INT_T download_result, IN PVOID_T pri_data)
 {
-    
+   PR_DEBUG("upgrade fw end\n"); 
 }
 
 
