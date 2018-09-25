@@ -1,0 +1,1886 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TUYA_IOT_SDK_linux_anyka: uni_network.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TUYA_IOT_SDK_linux_anyka
+   &#160;<span id="projectnumber">4.0.5</span>
+   </div>
+   <div id="projectbrief">FOR_linux_anyka_</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('uni__network_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">uni_network.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="tuya__cloud__types_8h_source.html">tuya_cloud_types.h</a>&quot;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;netdb.h&gt;</code><br />
+<code>#include &lt;netinet/tcp.h&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+</div>
+<p><a href="uni__network_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNW__IP__S.html">NW_IP_S</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNW__MAC__S.html">NW_MAC_S</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:abc4b2e3531c4992f2ae4b8c0f9751544"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#abc4b2e3531c4992f2ae4b8c0f9751544">IPADDR_NONE</a>&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0xffffffffUL)</td></tr>
+<tr class="separator:abc4b2e3531c4992f2ae4b8c0f9751544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f51a2eb21547df4e6b3ba046188345e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a6f51a2eb21547df4e6b3ba046188345e">IPADDR_LOOPBACK</a>&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0x7f000001UL)</td></tr>
+<tr class="separator:a6f51a2eb21547df4e6b3ba046188345e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ed0d622d61ecd6edd606e3b564f0a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ad6ed0d622d61ecd6edd606e3b564f0a2">IPADDR_ANY</a>&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0x00000000UL)</td></tr>
+<tr class="separator:ad6ed0d622d61ecd6edd606e3b564f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac661fca7e7d25e5cd379b811a767c29a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ac661fca7e7d25e5cd379b811a767c29a">IPADDR_BROADCAST</a>&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0xffffffffUL)</td></tr>
+<tr class="separator:ac661fca7e7d25e5cd379b811a767c29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f2ce9421ba341725299d36154d6034"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae6f2ce9421ba341725299d36154d6034">UNW_SUCCESS</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ae6f2ce9421ba341725299d36154d6034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c5d98a542bb7e5408a2579dadf6a01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a41c5d98a542bb7e5408a2579dadf6a01">UNW_FAIL</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a41c5d98a542bb7e5408a2579dadf6a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1b5f3c1b4470f44886d904f406e51e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7b1b5f3c1b4470f44886d904f406e51e">UNW_EINTR</a>&#160;&#160;&#160;-2</td></tr>
+<tr class="separator:a7b1b5f3c1b4470f44886d904f406e51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dadd1cc179f694c30fd6310dcf8366d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7dadd1cc179f694c30fd6310dcf8366d">UNW_EBADF</a>&#160;&#160;&#160;-3</td></tr>
+<tr class="separator:a7dadd1cc179f694c30fd6310dcf8366d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbcb65a5a09f9e60c35040e29e75b3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#acbbcb65a5a09f9e60c35040e29e75b3a">UNW_EAGAIN</a>&#160;&#160;&#160;-4</td></tr>
+<tr class="separator:acbbcb65a5a09f9e60c35040e29e75b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a755edeeb46e3ea5811cb2cb1dec468f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a755edeeb46e3ea5811cb2cb1dec468f5">UNW_EFAULT</a>&#160;&#160;&#160;-5</td></tr>
+<tr class="separator:a755edeeb46e3ea5811cb2cb1dec468f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e8227a03c134f050fe762ffd35b7af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a25e8227a03c134f050fe762ffd35b7af">UNW_EBUSY</a>&#160;&#160;&#160;-6</td></tr>
+<tr class="separator:a25e8227a03c134f050fe762ffd35b7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac543eeb35e975ae041b0cabf587d49a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ac543eeb35e975ae041b0cabf587d49a7">UNW_EINVAL</a>&#160;&#160;&#160;-7</td></tr>
+<tr class="separator:ac543eeb35e975ae041b0cabf587d49a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae699b1736f4059bc11d58e4fb335ae84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae699b1736f4059bc11d58e4fb335ae84">UNW_ENFILE</a>&#160;&#160;&#160;-8</td></tr>
+<tr class="separator:ae699b1736f4059bc11d58e4fb335ae84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ac13324f8ee2031715640f849c8345"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a87ac13324f8ee2031715640f849c8345">UNW_EMFILE</a>&#160;&#160;&#160;-9</td></tr>
+<tr class="separator:a87ac13324f8ee2031715640f849c8345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632852115e222a6c6569b953dc0b65a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a632852115e222a6c6569b953dc0b65a3">UNW_ENOSPC</a>&#160;&#160;&#160;-10</td></tr>
+<tr class="separator:a632852115e222a6c6569b953dc0b65a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8ec5a6c2b3bf3f3898889b10c57ba1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7d8ec5a6c2b3bf3f3898889b10c57ba1">UNW_EPIPE</a>&#160;&#160;&#160;-11</td></tr>
+<tr class="separator:a7d8ec5a6c2b3bf3f3898889b10c57ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5cc654b6f9c6c861a6b8fe27cb9731"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a6e5cc654b6f9c6c861a6b8fe27cb9731">UNW_EWOULDBLOCK</a>&#160;&#160;&#160;-12</td></tr>
+<tr class="separator:a6e5cc654b6f9c6c861a6b8fe27cb9731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71ca4336fd7d60c215b0ab2d6654a86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae71ca4336fd7d60c215b0ab2d6654a86">UNW_ENOTSOCK</a>&#160;&#160;&#160;-13</td></tr>
+<tr class="separator:ae71ca4336fd7d60c215b0ab2d6654a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4edc60969cf168218fbb2024db6614d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a4edc60969cf168218fbb2024db6614d5">UNW_ENOPROTOOPT</a>&#160;&#160;&#160;-14</td></tr>
+<tr class="separator:a4edc60969cf168218fbb2024db6614d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bd17a27be01ff665c076fc514830fa3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a5bd17a27be01ff665c076fc514830fa3">UNW_EADDRINUSE</a>&#160;&#160;&#160;-15</td></tr>
+<tr class="separator:a5bd17a27be01ff665c076fc514830fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e03057149fe661761fbc8309c7fb83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a12e03057149fe661761fbc8309c7fb83">UNW_EADDRNOTAVAIL</a>&#160;&#160;&#160;-16</td></tr>
+<tr class="separator:a12e03057149fe661761fbc8309c7fb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8424ac24308f4dd9b68468fa3bec18eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a8424ac24308f4dd9b68468fa3bec18eb">UNW_ENETDOWN</a>&#160;&#160;&#160;-17</td></tr>
+<tr class="separator:a8424ac24308f4dd9b68468fa3bec18eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c216a30bcaa3e38be53a6a193fa7ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a27c216a30bcaa3e38be53a6a193fa7ee">UNW_ENETUNREACH</a>&#160;&#160;&#160;-18</td></tr>
+<tr class="separator:a27c216a30bcaa3e38be53a6a193fa7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ff04890d4317307c875528d8d1adc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a71ff04890d4317307c875528d8d1adc3">UNW_ENETRESET</a>&#160;&#160;&#160;-19</td></tr>
+<tr class="separator:a71ff04890d4317307c875528d8d1adc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b3a8575cbc1fc1e15f63234436dd71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ac7b3a8575cbc1fc1e15f63234436dd71">UNW_ECONNRESET</a>&#160;&#160;&#160;-20</td></tr>
+<tr class="separator:ac7b3a8575cbc1fc1e15f63234436dd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f1acdb69e656631835f3abb7611e7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a34f1acdb69e656631835f3abb7611e7c">UNW_ENOBUFS</a>&#160;&#160;&#160;-21</td></tr>
+<tr class="separator:a34f1acdb69e656631835f3abb7611e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c505251aae6434bdd1ccaeec1a3ab78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a6c505251aae6434bdd1ccaeec1a3ab78">UNW_EISCONN</a>&#160;&#160;&#160;-22</td></tr>
+<tr class="separator:a6c505251aae6434bdd1ccaeec1a3ab78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8813539318a3580c31b3b28445a450"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#acc8813539318a3580c31b3b28445a450">UNW_ENOTCONN</a>&#160;&#160;&#160;-23</td></tr>
+<tr class="separator:acc8813539318a3580c31b3b28445a450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe3d96116ae682f1105799c784f39c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#afbe3d96116ae682f1105799c784f39c2">UNW_ETIMEDOUT</a>&#160;&#160;&#160;-24</td></tr>
+<tr class="separator:afbe3d96116ae682f1105799c784f39c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5559a9da6da35a3bf42ba36541a4d2e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a5559a9da6da35a3bf42ba36541a4d2e7">UNW_ECONNREFUSED</a>&#160;&#160;&#160;-25</td></tr>
+<tr class="separator:a5559a9da6da35a3bf42ba36541a4d2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c7e7aaa1c4a21fdb03622733b73f537"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7c7e7aaa1c4a21fdb03622733b73f537">UNW_EHOSTDOWN</a>&#160;&#160;&#160;-26</td></tr>
+<tr class="separator:a7c7e7aaa1c4a21fdb03622733b73f537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24360fbcdb8ac022c1e7b78c5d3c5469"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a24360fbcdb8ac022c1e7b78c5d3c5469">UNW_EHOSTUNREACH</a>&#160;&#160;&#160;-27</td></tr>
+<tr class="separator:a24360fbcdb8ac022c1e7b78c5d3c5469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a6755f3f54ed132d0ac463a3cc683b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae4a6755f3f54ed132d0ac463a3cc683b">UNW_ENOMEM</a>&#160;&#160;&#160;-28</td></tr>
+<tr class="separator:ae4a6755f3f54ed132d0ac463a3cc683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96abd4801ec3af2b452579304b0fa8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ac96abd4801ec3af2b452579304b0fa8b">UNW_EMSGSIZE</a>&#160;&#160;&#160;-29</td></tr>
+<tr class="separator:ac96abd4801ec3af2b452579304b0fa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7597b1501bbbe1f7ee281f97ed69226a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7597b1501bbbe1f7ee281f97ed69226a">UNW_FD_SET</a>(n,  p)&#160;&#160;&#160;FD_SET(n, p)</td></tr>
+<tr class="separator:a7597b1501bbbe1f7ee281f97ed69226a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fb2b11fbeba2e0e71b9728f0ad0065"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae7fb2b11fbeba2e0e71b9728f0ad0065">UNW_FD_CLR</a>(n,  p)&#160;&#160;&#160;FD_CLR(n, p)</td></tr>
+<tr class="separator:ae7fb2b11fbeba2e0e71b9728f0ad0065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a15fd22e43cdddf318f3bc5654a837"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ad1a15fd22e43cdddf318f3bc5654a837">UNW_FD_ISSET</a>(n,  p)&#160;&#160;&#160;FD_ISSET(n,p)</td></tr>
+<tr class="separator:ad1a15fd22e43cdddf318f3bc5654a837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9405b9893461e40327756978c9258f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aed9405b9893461e40327756978c9258f">UNW_FD_ZERO</a>(p)&#160;&#160;&#160;FD_ZERO(p)</td></tr>
+<tr class="separator:aed9405b9893461e40327756978c9258f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49faafe5a5be64683695b2533345c95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ad49faafe5a5be64683695b2533345c95">UNW_INET_ADDR</a>(x)&#160;&#160;&#160;inet_addr(x)</td></tr>
+<tr class="separator:ad49faafe5a5be64683695b2533345c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a3b4be44e8ef36bc87e9d884a55f8dab2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a3b4be44e8ef36bc87e9d884a55f8dab2">UNW_ERRNO_T</a></td></tr>
+<tr class="separator:a3b4be44e8ef36bc87e9d884a55f8dab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8c4706c1f1cdb61604b60e00738d07"><td class="memItemLeft" align="right" valign="top">typedef fd_set&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a></td></tr>
+<tr class="separator:a7c8c4706c1f1cdb61604b60e00738d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3bfd894e8d3b4e7102bb49e59b63978"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a></td></tr>
+<tr class="separator:ad3bfd894e8d3b4e7102bb49e59b63978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad217ed5254e232b861c550ab6feac406"><td class="memItemLeft" align="right" valign="top">typedef struct addrinfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ad217ed5254e232b861c550ab6feac406">ADDRINFO</a></td></tr>
+<tr class="separator:ad217ed5254e232b861c550ab6feac406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a68c4d1802180571e07c37a74089cfdfb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfb">UNW_PROTOCOL_TYPE</a> { <a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfbae991c7cad918269624b3c28147e18a93">PROTOCOL_TCP</a> = 0, 
+<a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfba3c79df624160aa6dbeeb4e2c13ca3dc7">PROTOCOL_UDP</a> = 1
+ }</td></tr>
+<tr class="separator:a68c4d1802180571e07c37a74089cfdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0a58de302752e592ff4602b046049a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049a">UNW_TRANS_TYPE_E</a> { <a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049aa200ba8a9aa25dcb0bdd13028ae0db2cc">TRANS_RECV</a> = 0, 
+<a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049aab55f78d079208c4c00f2a1bc25392563">TRANS_SEND</a> = 1
+ }</td></tr>
+<tr class="separator:a1a0a58de302752e592ff4602b046049a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ae092e65bd8161190500307fe58a9fd05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__network_8h.html#a3b4be44e8ef36bc87e9d884a55f8dab2">UNW_ERRNO_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae092e65bd8161190500307fe58a9fd05">unw_get_errno</a> (<a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>)</td></tr>
+<tr class="separator:ae092e65bd8161190500307fe58a9fd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa57a93e11a0f1b0d94c0395ee6cf22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7fa57a93e11a0f1b0d94c0395ee6cf22">unw_select</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> maxfd, <a class="el" href="tuya__cloud__types_8h.html#a62766f3ea8784d1db62df989f8f33d2d">INOUT</a> <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a> *readfds, <a class="el" href="tuya__cloud__types_8h.html#a62766f3ea8784d1db62df989f8f33d2d">INOUT</a> <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a> *writefds, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a> *errorfds, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> ms_timeout)</td></tr>
+<tr class="separator:a7fa57a93e11a0f1b0d94c0395ee6cf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a44a76305dd85c2e258958aab89fbb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a1a44a76305dd85c2e258958aab89fbb0">unw_get_nonblock</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd)</td></tr>
+<tr class="separator:a1a44a76305dd85c2e258958aab89fbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb23ec801afcc29a16e946a230543dcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aeb23ec801afcc29a16e946a230543dcc">unw_set_block</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#acdbe7a2930d2b029020a819320b5d15e">BOOL_T</a> block)</td></tr>
+<tr class="separator:aeb23ec801afcc29a16e946a230543dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a408ade6c95b664e2a250346ee79bf9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7a408ade6c95b664e2a250346ee79bf9">unw_close</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd)</td></tr>
+<tr class="separator:a7a408ade6c95b664e2a250346ee79bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5268f475f1409dadb2209a6fcd1def6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a5268f475f1409dadb2209a6fcd1def6d">unw_shutdown</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> how)</td></tr>
+<tr class="separator:a5268f475f1409dadb2209a6fcd1def6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722c20b26c19df1f2c8ab8f845284813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a722c20b26c19df1f2c8ab8f845284813">unw_socket_create</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfb">UNW_PROTOCOL_TYPE</a> type)</td></tr>
+<tr class="separator:a722c20b26c19df1f2c8ab8f845284813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed9b7954288e0aa06dcbf6165237085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a4ed9b7954288e0aa06dcbf6165237085">unw_connect</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> addr, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> port)</td></tr>
+<tr class="separator:a4ed9b7954288e0aa06dcbf6165237085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a077ec4cfd5b94bbc1078f97ecbd8d2ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a077ec4cfd5b94bbc1078f97ecbd8d2ee">unw_connect_raw</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, void *p_socket, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> len)</td></tr>
+<tr class="separator:a077ec4cfd5b94bbc1078f97ecbd8d2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1719ccbbc712abbc61bad9d28589f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aaa1719ccbbc712abbc61bad9d28589f1">unw_bind</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> addr, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> port)</td></tr>
+<tr class="separator:aaa1719ccbbc712abbc61bad9d28589f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097dc1a4c2b54ed93862146431886253"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a097dc1a4c2b54ed93862146431886253">unw_listen</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> backlog)</td></tr>
+<tr class="separator:a097dc1a4c2b54ed93862146431886253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9432da144af05288abcf62c1b16e75a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a9432da144af05288abcf62c1b16e75a9">unw_active</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *addr, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> *port)</td></tr>
+<tr class="separator:a9432da144af05288abcf62c1b16e75a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d3ba2b285b50b7fff0dabe657afa4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a45d3ba2b285b50b7fff0dabe657afa4b">unw_send</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *buf, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> nbytes)</td></tr>
+<tr class="separator:a45d3ba2b285b50b7fff0dabe657afa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3423b38f8f01953e37be9fd7bcaaa2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aa3423b38f8f01953e37be9fd7bcaaa2f">unw_send_to</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *buf, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> nbytes, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> addr, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> port)</td></tr>
+<tr class="separator:aa3423b38f8f01953e37be9fd7bcaaa2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b7e264a9934b336eba98f664a6826b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#af9b7e264a9934b336eba98f664a6826b">unw_recv</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *buf, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> nbytes)</td></tr>
+<tr class="separator:af9b7e264a9934b336eba98f664a6826b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ec9f6f7e8bac780a6484849993be24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aa3ec9f6f7e8bac780a6484849993be24">unw_recvfrom</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *buf, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> nbytes, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *addr, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> *port)</td></tr>
+<tr class="separator:aa3ec9f6f7e8bac780a6484849993be24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5488e94ee8c0a572c6d28d1dd3a3b5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ab5488e94ee8c0a572c6d28d1dd3a3b5c">unw_set_timeout</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> ms_timeout, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049a">UNW_TRANS_TYPE_E</a> type)</td></tr>
+<tr class="separator:ab5488e94ee8c0a572c6d28d1dd3a3b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1ed03bc85ac423516e77b7ea9f7add"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a5e1ed03bc85ac423516e77b7ea9f7add">unw_set_bufsize</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> buf_size, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049a">UNW_TRANS_TYPE_E</a> type)</td></tr>
+<tr class="separator:a5e1ed03bc85ac423516e77b7ea9f7add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c8e1f9292e49499a422309b3c7d4a96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7c8e1f9292e49499a422309b3c7d4a96">unw_set_reuse</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd)</td></tr>
+<tr class="separator:a7c8e1f9292e49499a422309b3c7d4a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd11f4be36a8c1d2ea67c2eaef4e8ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a4bd11f4be36a8c1d2ea67c2eaef4e8ac">unw_disable_nagle</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd)</td></tr>
+<tr class="separator:a4bd11f4be36a8c1d2ea67c2eaef4e8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7211ca1a513e4b47d13ad460c9d68759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7211ca1a513e4b47d13ad460c9d68759">unw_set_boardcast</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd)</td></tr>
+<tr class="separator:a7211ca1a513e4b47d13ad460c9d68759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3931d9a0d9b2490c9f330635429d6d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ae3931d9a0d9b2490c9f330635429d6d8">unw_gethostbyname</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *domain, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *addr)</td></tr>
+<tr class="separator:ae3931d9a0d9b2490c9f330635429d6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82108f6b59611d05cd5877bfedec383f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a82108f6b59611d05cd5877bfedec383f">unw_getaddrinfo</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *hostname, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *service, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfb">UNW_PROTOCOL_TYPE</a> type, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad217ed5254e232b861c550ab6feac406">ADDRINFO</a> **res)</td></tr>
+<tr class="separator:a82108f6b59611d05cd5877bfedec383f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa728fb8d21a17d791289e1ac30a6d6b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aa728fb8d21a17d791289e1ac30a6d6b0">unw_getsockname</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> *len)</td></tr>
+<tr class="separator:aa728fb8d21a17d791289e1ac30a6d6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad649bdc7c26f0eaa2b34ef2b546d6763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#ad649bdc7c26f0eaa2b34ef2b546d6763">unw_str2addr</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *ip_str)</td></tr>
+<tr class="separator:ad649bdc7c26f0eaa2b34ef2b546d6763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596945d5219d639a3615f948193871ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a596945d5219d639a3615f948193871ac">unw_accept</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *addr, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> *port)</td></tr>
+<tr class="separator:a596945d5219d639a3615f948193871ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa53f714b1e4d967b566734b99bccdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7aa53f714b1e4d967b566734b99bccdf">unw_recv_nd_size</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *buf, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> buf_size, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> nd_size)</td></tr>
+<tr class="separator:a7aa53f714b1e4d967b566734b99bccdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a6ce5b7f1f8641789b3dbae19a869b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#aa0a6ce5b7f1f8641789b3dbae19a869b">unw_set_keepalive</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#acdbe7a2930d2b029020a819320b5d15e">BOOL_T</a> alive, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> idle, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> intr, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> cnt)</td></tr>
+<tr class="separator:aa0a6ce5b7f1f8641789b3dbae19a869b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca117c9167b984dab05f0e839c70955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a6ca117c9167b984dab05f0e839c70955">unw_socket_bind</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd, <a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *ip)</td></tr>
+<tr class="separator:a6ca117c9167b984dab05f0e839c70955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9081c0326a1280f7f4f10719250435"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__network_8h.html#a7a9081c0326a1280f7f4f10719250435">unw_set_cloexec</a> (<a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> fd)</td></tr>
+<tr class="separator:a7a9081c0326a1280f7f4f10719250435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="ad6ed0d622d61ecd6edd606e3b564f0a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ed0d622d61ecd6edd606e3b564f0a2">&#9670;&nbsp;</a></span>IPADDR_ANY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPADDR_ANY&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0x00000000UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0.0.0.0 </p>
+
+</div>
+</div>
+<a id="ac661fca7e7d25e5cd379b811a767c29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac661fca7e7d25e5cd379b811a767c29a">&#9670;&nbsp;</a></span>IPADDR_BROADCAST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPADDR_BROADCAST&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0xffffffffUL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>255.255.255.255 </p>
+
+</div>
+</div>
+<a id="a6f51a2eb21547df4e6b3ba046188345e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f51a2eb21547df4e6b3ba046188345e">&#9670;&nbsp;</a></span>IPADDR_LOOPBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPADDR_LOOPBACK&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0x7f000001UL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>127.0.0.1 </p>
+
+</div>
+</div>
+<a id="abc4b2e3531c4992f2ae4b8c0f9751544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc4b2e3531c4992f2ae4b8c0f9751544">&#9670;&nbsp;</a></span>IPADDR_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPADDR_NONE&#160;&#160;&#160;((<a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>)0xffffffffUL)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>255.255.255.255 </p>
+
+</div>
+</div>
+<a id="a5bd17a27be01ff665c076fc514830fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd17a27be01ff665c076fc514830fa3">&#9670;&nbsp;</a></span>UNW_EADDRINUSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EADDRINUSE&#160;&#160;&#160;-15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12e03057149fe661761fbc8309c7fb83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12e03057149fe661761fbc8309c7fb83">&#9670;&nbsp;</a></span>UNW_EADDRNOTAVAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EADDRNOTAVAIL&#160;&#160;&#160;-16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbbcb65a5a09f9e60c35040e29e75b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbcb65a5a09f9e60c35040e29e75b3a">&#9670;&nbsp;</a></span>UNW_EAGAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EAGAIN&#160;&#160;&#160;-4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dadd1cc179f694c30fd6310dcf8366d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dadd1cc179f694c30fd6310dcf8366d">&#9670;&nbsp;</a></span>UNW_EBADF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EBADF&#160;&#160;&#160;-3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25e8227a03c134f050fe762ffd35b7af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e8227a03c134f050fe762ffd35b7af">&#9670;&nbsp;</a></span>UNW_EBUSY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EBUSY&#160;&#160;&#160;-6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5559a9da6da35a3bf42ba36541a4d2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5559a9da6da35a3bf42ba36541a4d2e7">&#9670;&nbsp;</a></span>UNW_ECONNREFUSED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ECONNREFUSED&#160;&#160;&#160;-25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7b3a8575cbc1fc1e15f63234436dd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b3a8575cbc1fc1e15f63234436dd71">&#9670;&nbsp;</a></span>UNW_ECONNRESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ECONNRESET&#160;&#160;&#160;-20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a755edeeb46e3ea5811cb2cb1dec468f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a755edeeb46e3ea5811cb2cb1dec468f5">&#9670;&nbsp;</a></span>UNW_EFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EFAULT&#160;&#160;&#160;-5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c7e7aaa1c4a21fdb03622733b73f537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c7e7aaa1c4a21fdb03622733b73f537">&#9670;&nbsp;</a></span>UNW_EHOSTDOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EHOSTDOWN&#160;&#160;&#160;-26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24360fbcdb8ac022c1e7b78c5d3c5469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24360fbcdb8ac022c1e7b78c5d3c5469">&#9670;&nbsp;</a></span>UNW_EHOSTUNREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EHOSTUNREACH&#160;&#160;&#160;-27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b1b5f3c1b4470f44886d904f406e51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1b5f3c1b4470f44886d904f406e51e">&#9670;&nbsp;</a></span>UNW_EINTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EINTR&#160;&#160;&#160;-2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac543eeb35e975ae041b0cabf587d49a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac543eeb35e975ae041b0cabf587d49a7">&#9670;&nbsp;</a></span>UNW_EINVAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EINVAL&#160;&#160;&#160;-7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c505251aae6434bdd1ccaeec1a3ab78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c505251aae6434bdd1ccaeec1a3ab78">&#9670;&nbsp;</a></span>UNW_EISCONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EISCONN&#160;&#160;&#160;-22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87ac13324f8ee2031715640f849c8345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ac13324f8ee2031715640f849c8345">&#9670;&nbsp;</a></span>UNW_EMFILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EMFILE&#160;&#160;&#160;-9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96abd4801ec3af2b452579304b0fa8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96abd4801ec3af2b452579304b0fa8b">&#9670;&nbsp;</a></span>UNW_EMSGSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EMSGSIZE&#160;&#160;&#160;-29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8424ac24308f4dd9b68468fa3bec18eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8424ac24308f4dd9b68468fa3bec18eb">&#9670;&nbsp;</a></span>UNW_ENETDOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENETDOWN&#160;&#160;&#160;-17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71ff04890d4317307c875528d8d1adc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ff04890d4317307c875528d8d1adc3">&#9670;&nbsp;</a></span>UNW_ENETRESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENETRESET&#160;&#160;&#160;-19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27c216a30bcaa3e38be53a6a193fa7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c216a30bcaa3e38be53a6a193fa7ee">&#9670;&nbsp;</a></span>UNW_ENETUNREACH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENETUNREACH&#160;&#160;&#160;-18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae699b1736f4059bc11d58e4fb335ae84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae699b1736f4059bc11d58e4fb335ae84">&#9670;&nbsp;</a></span>UNW_ENFILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENFILE&#160;&#160;&#160;-8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34f1acdb69e656631835f3abb7611e7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f1acdb69e656631835f3abb7611e7c">&#9670;&nbsp;</a></span>UNW_ENOBUFS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENOBUFS&#160;&#160;&#160;-21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4a6755f3f54ed132d0ac463a3cc683b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a6755f3f54ed132d0ac463a3cc683b">&#9670;&nbsp;</a></span>UNW_ENOMEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENOMEM&#160;&#160;&#160;-28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4edc60969cf168218fbb2024db6614d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4edc60969cf168218fbb2024db6614d5">&#9670;&nbsp;</a></span>UNW_ENOPROTOOPT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENOPROTOOPT&#160;&#160;&#160;-14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a632852115e222a6c6569b953dc0b65a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632852115e222a6c6569b953dc0b65a3">&#9670;&nbsp;</a></span>UNW_ENOSPC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENOSPC&#160;&#160;&#160;-10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc8813539318a3580c31b3b28445a450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8813539318a3580c31b3b28445a450">&#9670;&nbsp;</a></span>UNW_ENOTCONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENOTCONN&#160;&#160;&#160;-23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae71ca4336fd7d60c215b0ab2d6654a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71ca4336fd7d60c215b0ab2d6654a86">&#9670;&nbsp;</a></span>UNW_ENOTSOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ENOTSOCK&#160;&#160;&#160;-13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d8ec5a6c2b3bf3f3898889b10c57ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8ec5a6c2b3bf3f3898889b10c57ba1">&#9670;&nbsp;</a></span>UNW_EPIPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EPIPE&#160;&#160;&#160;-11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbe3d96116ae682f1105799c784f39c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe3d96116ae682f1105799c784f39c2">&#9670;&nbsp;</a></span>UNW_ETIMEDOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_ETIMEDOUT&#160;&#160;&#160;-24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e5cc654b6f9c6c861a6b8fe27cb9731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5cc654b6f9c6c861a6b8fe27cb9731">&#9670;&nbsp;</a></span>UNW_EWOULDBLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_EWOULDBLOCK&#160;&#160;&#160;-12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41c5d98a542bb7e5408a2579dadf6a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41c5d98a542bb7e5408a2579dadf6a01">&#9670;&nbsp;</a></span>UNW_FAIL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_FAIL&#160;&#160;&#160;-1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7fb2b11fbeba2e0e71b9728f0ad0065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7fb2b11fbeba2e0e71b9728f0ad0065">&#9670;&nbsp;</a></span>UNW_FD_CLR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_FD_CLR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;FD_CLR(n, p)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1a15fd22e43cdddf318f3bc5654a837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a15fd22e43cdddf318f3bc5654a837">&#9670;&nbsp;</a></span>UNW_FD_ISSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_FD_ISSET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;FD_ISSET(n,p)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7597b1501bbbe1f7ee281f97ed69226a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7597b1501bbbe1f7ee281f97ed69226a">&#9670;&nbsp;</a></span>UNW_FD_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;FD_SET(n, p)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed9405b9893461e40327756978c9258f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9405b9893461e40327756978c9258f">&#9670;&nbsp;</a></span>UNW_FD_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_FD_ZERO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;FD_ZERO(p)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad49faafe5a5be64683695b2533345c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad49faafe5a5be64683695b2533345c95">&#9670;&nbsp;</a></span>UNW_INET_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_INET_ADDR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;inet_addr(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6f2ce9421ba341725299d36154d6034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f2ce9421ba341725299d36154d6034">&#9670;&nbsp;</a></span>UNW_SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UNW_SUCCESS&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="ad217ed5254e232b861c550ab6feac406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad217ed5254e232b861c550ab6feac406">&#9670;&nbsp;</a></span>ADDRINFO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct addrinfo <a class="el" href="uni__network_8h.html#ad217ed5254e232b861c550ab6feac406">ADDRINFO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b4be44e8ef36bc87e9d884a55f8dab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4be44e8ef36bc87e9d884a55f8dab2">&#9670;&nbsp;</a></span>UNW_ERRNO_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> <a class="el" href="uni__network_8h.html#a3b4be44e8ef36bc87e9d884a55f8dab2">UNW_ERRNO_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c8c4706c1f1cdb61604b60e00738d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8c4706c1f1cdb61604b60e00738d07">&#9670;&nbsp;</a></span>UNW_FD_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef fd_set <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3bfd894e8d3b4e7102bb49e59b63978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3bfd894e8d3b4e7102bb49e59b63978">&#9670;&nbsp;</a></span>UNW_IP_ADDR_T</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">枚举类型说明</h2>
+<a id="a68c4d1802180571e07c37a74089cfdfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c4d1802180571e07c37a74089cfdfb">&#9670;&nbsp;</a></span>UNW_PROTOCOL_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfb">UNW_PROTOCOL_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a68c4d1802180571e07c37a74089cfdfbae991c7cad918269624b3c28147e18a93"></a>PROTOCOL_TCP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a68c4d1802180571e07c37a74089cfdfba3c79df624160aa6dbeeb4e2c13ca3dc7"></a>PROTOCOL_UDP&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1a0a58de302752e592ff4602b046049a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0a58de302752e592ff4602b046049a">&#9670;&nbsp;</a></span>UNW_TRANS_TYPE_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049a">UNW_TRANS_TYPE_E</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a1a0a58de302752e592ff4602b046049aa200ba8a9aa25dcb0bdd13028ae0db2cc"></a>TRANS_RECV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1a0a58de302752e592ff4602b046049aab55f78d079208c4c00f2a1bc25392563"></a>TRANS_SEND&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a596945d5219d639a3615f948193871ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a596945d5219d639a3615f948193871ac">&#9670;&nbsp;</a></span>unw_accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_accept </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> *&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9432da144af05288abcf62c1b16e75a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9432da144af05288abcf62c1b16e75a9">&#9670;&nbsp;</a></span>unw_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_active </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> *&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa1719ccbbc712abbc61bad9d28589f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1719ccbbc712abbc61bad9d28589f1">&#9670;&nbsp;</a></span>unw_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_bind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a>&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a408ade6c95b664e2a250346ee79bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a408ade6c95b664e2a250346ee79bf9">&#9670;&nbsp;</a></span>unw_close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_close </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ed9b7954288e0aa06dcbf6165237085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed9b7954288e0aa06dcbf6165237085">&#9670;&nbsp;</a></span>unw_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a>&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a077ec4cfd5b94bbc1078f97ecbd8d2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a077ec4cfd5b94bbc1078f97ecbd8d2ee">&#9670;&nbsp;</a></span>unw_connect_raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_connect_raw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bd11f4be36a8c1d2ea67c2eaef4e8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd11f4be36a8c1d2ea67c2eaef4e8ac">&#9670;&nbsp;</a></span>unw_disable_nagle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_disable_nagle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae092e65bd8161190500307fe58a9fd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae092e65bd8161190500307fe58a9fd05">&#9670;&nbsp;</a></span>unw_get_errno()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__network_8h.html#a3b4be44e8ef36bc87e9d884a55f8dab2">UNW_ERRNO_T</a> unw_get_errno </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a44a76305dd85c2e258958aab89fbb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a44a76305dd85c2e258958aab89fbb0">&#9670;&nbsp;</a></span>unw_get_nonblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_get_nonblock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82108f6b59611d05cd5877bfedec383f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82108f6b59611d05cd5877bfedec383f">&#9670;&nbsp;</a></span>unw_getaddrinfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_getaddrinfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *&#160;</td>
+          <td class="paramname"><em>hostname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfb">UNW_PROTOCOL_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad217ed5254e232b861c550ab6feac406">ADDRINFO</a> **&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae3931d9a0d9b2490c9f330635429d6d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3931d9a0d9b2490c9f330635429d6d8">&#9670;&nbsp;</a></span>unw_gethostbyname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_gethostbyname </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa728fb8d21a17d791289e1ac30a6d6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa728fb8d21a17d791289e1ac30a6d6b0">&#9670;&nbsp;</a></span>unw_getsockname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_getsockname </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> *&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a097dc1a4c2b54ed93862146431886253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097dc1a4c2b54ed93862146431886253">&#9670;&nbsp;</a></span>unw_listen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_listen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>backlog</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9b7e264a9934b336eba98f664a6826b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b7e264a9934b336eba98f664a6826b">&#9670;&nbsp;</a></span>unw_recv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_recv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>nbytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7aa53f714b1e4d967b566734b99bccdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa53f714b1e4d967b566734b99bccdf">&#9670;&nbsp;</a></span>unw_recv_nd_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_recv_nd_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>nd_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3ec9f6f7e8bac780a6484849993be24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ec9f6f7e8bac780a6484849993be24">&#9670;&nbsp;</a></span>unw_recvfrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_recvfrom </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a> *&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fa57a93e11a0f1b0d94c0395ee6cf22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa57a93e11a0f1b0d94c0395ee6cf22">&#9670;&nbsp;</a></span>unw_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_select </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>maxfd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#a62766f3ea8784d1db62df989f8f33d2d">INOUT</a> <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a> *&#160;</td>
+          <td class="paramname"><em>readfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#a62766f3ea8784d1db62df989f8f33d2d">INOUT</a> <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a> *&#160;</td>
+          <td class="paramname"><em>writefds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> <a class="el" href="uni__network_8h.html#a7c8c4706c1f1cdb61604b60e00738d07">UNW_FD_SET</a> *&#160;</td>
+          <td class="paramname"><em>errorfds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>ms_timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45d3ba2b285b50b7fff0dabe657afa4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d3ba2b285b50b7fff0dabe657afa4b">&#9670;&nbsp;</a></span>unw_send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>nbytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3423b38f8f01953e37be9fd7bcaaa2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3423b38f8f01953e37be9fd7bcaaa2f">&#9670;&nbsp;</a></span>unw_send_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_send_to </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>nbytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a850e0596908afbdb6680cd97d5ec47fd">USHORT_T</a>&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb23ec801afcc29a16e946a230543dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb23ec801afcc29a16e946a230543dcc">&#9670;&nbsp;</a></span>unw_set_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_block </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#acdbe7a2930d2b029020a819320b5d15e">BOOL_T</a>&#160;</td>
+          <td class="paramname"><em>block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7211ca1a513e4b47d13ad460c9d68759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7211ca1a513e4b47d13ad460c9d68759">&#9670;&nbsp;</a></span>unw_set_boardcast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_boardcast </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e1ed03bc85ac423516e77b7ea9f7add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1ed03bc85ac423516e77b7ea9f7add">&#9670;&nbsp;</a></span>unw_set_bufsize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_bufsize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049a">UNW_TRANS_TYPE_E</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a9081c0326a1280f7f4f10719250435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9081c0326a1280f7f4f10719250435">&#9670;&nbsp;</a></span>unw_set_cloexec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_cloexec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0a6ce5b7f1f8641789b3dbae19a869b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a6ce5b7f1f8641789b3dbae19a869b">&#9670;&nbsp;</a></span>unw_set_keepalive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_keepalive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#acdbe7a2930d2b029020a819320b5d15e">BOOL_T</a>&#160;</td>
+          <td class="paramname"><em>alive</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>idle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>intr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#ab8e5b0f0ddb432fd916ccdbaf986e0e7">UINT_T</a>&#160;</td>
+          <td class="paramname"><em>cnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c8e1f9292e49499a422309b3c7d4a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c8e1f9292e49499a422309b3c7d4a96">&#9670;&nbsp;</a></span>unw_set_reuse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_reuse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5488e94ee8c0a572c6d28d1dd3a3b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5488e94ee8c0a572c6d28d1dd3a3b5c">&#9670;&nbsp;</a></span>unw_set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_set_timeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>ms_timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a1a0a58de302752e592ff4602b046049a">UNW_TRANS_TYPE_E</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5268f475f1409dadb2209a6fcd1def6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5268f475f1409dadb2209a6fcd1def6d">&#9670;&nbsp;</a></span>unw_shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_shutdown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>how</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ca117c9167b984dab05f0e839c70955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca117c9167b984dab05f0e839c70955">&#9670;&nbsp;</a></span>unw_socket_bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_socket_bind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a>&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *&#160;</td>
+          <td class="paramname"><em>ip</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a722c20b26c19df1f2c8ab8f845284813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722c20b26c19df1f2c8ab8f845284813">&#9670;&nbsp;</a></span>unw_socket_create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tuya__cloud__types_8h.html#a609ab948760c62783bd5698658b50e94">INT_T</a> unw_socket_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="el" href="uni__network_8h.html#a68c4d1802180571e07c37a74089cfdfb">UNW_PROTOCOL_TYPE</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad649bdc7c26f0eaa2b34ef2b546d6763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad649bdc7c26f0eaa2b34ef2b546d6763">&#9670;&nbsp;</a></span>unw_str2addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__network_8h.html#ad3bfd894e8d3b4e7102bb49e59b63978">UNW_IP_ADDR_T</a> unw_str2addr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="el" href="tuya__cloud__types_8h.html#a9d9c218e90f103040ec63e387c70b510">CHAR_T</a> *&#160;</td>
+          <td class="paramname"><em>ip_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_66e379482d990db75200f5dafa933d0c.html">linux_anyka_iot_bs_gw_prj</a></li><li class="navelem"><a class="el" href="dir_29ba281f43f7151e86ac53d36dd99c3d.html">tuya_iot_sdk</a></li><li class="navelem"><a class="el" href="dir_3a92ad2b1a09afb6d5e0d22b4b8576e4.html">include</a></li><li class="navelem"><a class="el" href="uni__network_8h.html">uni_network.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

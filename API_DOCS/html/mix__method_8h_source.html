@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TUYA_IOT_SDK_linux_anyka: mix_method.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TUYA_IOT_SDK_linux_anyka
+   &#160;<span id="projectnumber">4.0.5</span>
+   </div>
+   <div id="projectbrief">FOR_linux_anyka_</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('mix__method_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mix_method.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mix__method_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***********************************************************</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*  File: mix_method.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*  Author: nzy</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*  Date: 20160826</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">***********************************************************/</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef _MIX_METHOD_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">    #define _MIX_METHOD_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;adapter_platform.h&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tuya__cloud__error__code_8h.html">tuya_cloud_error_code.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef  __MIX_METHOD_GLOBALS</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    #define __MIX_METHOD_EXT</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="mix__method_8h.html#a5332e536458f4a7dd120a640e059e373">   20</a></span>&#160;<span class="preprocessor">    #define __MIX_METHOD_EXT extern</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/***********************************************************</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*************************micro define***********************</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">***********************************************************/</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="mix__method_8h.html#a0d84260e6fcdc7510818254a374b3dd4">   26</a></span>&#160;<span class="preprocessor">#define STRCASE_CMP</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/***********************************************************</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">*************************variable define********************</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">***********************************************************/</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/***********************************************************</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">*************************function define********************</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">***********************************************************/</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifndef STRCASE_CMP</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;int strcasecmp(<span class="keyword">const</span> <span class="keywordtype">char</span> *s1, <span class="keyword">const</span> <span class="keywordtype">char</span> *s2);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;int <a class="code" href="mix__method_8h.html#a42914ff5d2203298777c4b1f98be7d24">strncasecmp</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *s1, <span class="keyword">const</span> <span class="keywordtype">char</span> *s2, <span class="keywordtype">size_t</span> n);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;unsigned <span class="keywordtype">char</span> <a class="code" href="mix__method_8h.html#ad2a981a1052e57c69697275d168b3326">asc2hex</a>(<span class="keywordtype">char</span> asccode);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;void <a class="code" href="mix__method_8h.html#a773cd25a2b98e344f77fb4688f23660e">ascs2hex</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *hex,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ascs,<span class="keywordtype">int</span> srclen);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;void <a class="code" href="mix__method_8h.html#a72760f5e12e7c5b1b005fd7fd7ded840">hex2str</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbDest, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbSrc, <span class="keywordtype">int</span> nLen);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">// input: str-&gt;string</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//        revr_index-&gt;reverse index,start from 0</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//        ch-&gt;find char</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// return: find position</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;int <a class="code" href="mix__method_8h.html#a6e2315df8a2e3925da0e4c1b74ab83a5">str_revr_find_ch</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *str,<span class="keyword">const</span> <span class="keywordtype">int</span> revr_index,<span class="keyword">const</span> <span class="keywordtype">char</span> ch);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;void <a class="code" href="mix__method_8h.html#a3d57be6fd51f30ca947bb83abf24b92c">byte_sort</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> is_ascend,<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buf,<span class="keywordtype">int</span> buf_cnt);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;char *<a class="code" href="mix__method_8h.html#a339fdda7dd4eac35c29b2212333eafb1">mm_strdup</a>(<span class="keywordtype">char</span> *str);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// ver is xx.xx.xx</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;__MIX_METHOD_EXT \</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;int <a class="code" href="mix__method_8h.html#a8ab229154e763672da353e173cefde2d">is_valid_version</a>(<span class="keywordtype">char</span> *ver);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="ttc" id="mix__method_8h_html_a42914ff5d2203298777c4b1f98be7d24"><div class="ttname"><a href="mix__method_8h.html#a42914ff5d2203298777c4b1f98be7d24">strncasecmp</a></div><div class="ttdeci">__MIX_METHOD_EXT int strncasecmp(const char *s1, const char *s2, size_t n)</div></div>
+<div class="ttc" id="mix__method_8h_html_ad2a981a1052e57c69697275d168b3326"><div class="ttname"><a href="mix__method_8h.html#ad2a981a1052e57c69697275d168b3326">asc2hex</a></div><div class="ttdeci">__MIX_METHOD_EXT unsigned char asc2hex(char asccode)</div></div>
+<div class="ttc" id="tuya__cloud__error__code_8h_html"><div class="ttname"><a href="tuya__cloud__error__code_8h.html">tuya_cloud_error_code.h</a></div></div>
+<div class="ttc" id="mix__method_8h_html_a6e2315df8a2e3925da0e4c1b74ab83a5"><div class="ttname"><a href="mix__method_8h.html#a6e2315df8a2e3925da0e4c1b74ab83a5">str_revr_find_ch</a></div><div class="ttdeci">__MIX_METHOD_EXT int str_revr_find_ch(const char *str, const int revr_index, const char ch)</div></div>
+<div class="ttc" id="mix__method_8h_html_a3d57be6fd51f30ca947bb83abf24b92c"><div class="ttname"><a href="mix__method_8h.html#a3d57be6fd51f30ca947bb83abf24b92c">byte_sort</a></div><div class="ttdeci">__MIX_METHOD_EXT void byte_sort(unsigned char is_ascend, unsigned char *buf, int buf_cnt)</div></div>
+<div class="ttc" id="mix__method_8h_html_a72760f5e12e7c5b1b005fd7fd7ded840"><div class="ttname"><a href="mix__method_8h.html#a72760f5e12e7c5b1b005fd7fd7ded840">hex2str</a></div><div class="ttdeci">__MIX_METHOD_EXT void hex2str(unsigned char *pbDest, unsigned char *pbSrc, int nLen)</div></div>
+<div class="ttc" id="mix__method_8h_html_a339fdda7dd4eac35c29b2212333eafb1"><div class="ttname"><a href="mix__method_8h.html#a339fdda7dd4eac35c29b2212333eafb1">mm_strdup</a></div><div class="ttdeci">__MIX_METHOD_EXT char * mm_strdup(char *str)</div></div>
+<div class="ttc" id="mix__method_8h_html_a773cd25a2b98e344f77fb4688f23660e"><div class="ttname"><a href="mix__method_8h.html#a773cd25a2b98e344f77fb4688f23660e">ascs2hex</a></div><div class="ttdeci">__MIX_METHOD_EXT void ascs2hex(unsigned char *hex, unsigned char *ascs, int srclen)</div></div>
+<div class="ttc" id="mix__method_8h_html_a8ab229154e763672da353e173cefde2d"><div class="ttname"><a href="mix__method_8h.html#a8ab229154e763672da353e173cefde2d">is_valid_version</a></div><div class="ttdeci">__MIX_METHOD_EXT int is_valid_version(char *ver)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_66e379482d990db75200f5dafa933d0c.html">linux_anyka_iot_bs_gw_prj</a></li><li class="navelem"><a class="el" href="dir_29ba281f43f7151e86ac53d36dd99c3d.html">tuya_iot_sdk</a></li><li class="navelem"><a class="el" href="dir_3a92ad2b1a09afb6d5e0d22b4b8576e4.html">include</a></li><li class="navelem"><a class="el" href="mix__method_8h.html">mix_method.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

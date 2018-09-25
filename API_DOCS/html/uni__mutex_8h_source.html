@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TUYA_IOT_SDK_linux_anyka: uni_mutex.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TUYA_IOT_SDK_linux_anyka
+   &#160;<span id="projectnumber">4.0.5</span>
+   </div>
+   <div id="projectbrief">FOR_linux_anyka_</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('uni__mutex_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">uni_mutex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="uni__mutex_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _UNI_MUTEX_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _UNI_MUTEX_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tuya__cloud__types_8h.html">tuya_cloud_types.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 定义互斥量管理句柄</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="uni__mutex_8h.html#ad8fa55fda6864b819c2a903172a6001e">   11</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="tuya__cloud__types_8h.html#a16db040b42311497d8fc5a419b6f632f">PVOID_T</a> <a class="code" href="uni__mutex_8h.html#ad8fa55fda6864b819c2a903172a6001e">MUTEX_HANDLE</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="tuya__cloud__error__code_8h.html#a3665964ed772250563675758836c5baa">OPERATE_RET</a> <a class="code" href="uni__mutex_8h.html#ac646d3c34d7b07a4df8e677572377e6b">CreateMutexAndInit</a>(<a class="code" href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a> MUTEX_HANDLE *pMutexHandle);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="tuya__cloud__error__code_8h.html#a3665964ed772250563675758836c5baa">OPERATE_RET</a> <a class="code" href="uni__mutex_8h.html#a0a15112cb94ccac3a35bdfd812437f8b">MutexLock</a>(<a class="code" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="code" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> MUTEX_HANDLE mutexHandle);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="tuya__cloud__error__code_8h.html#a3665964ed772250563675758836c5baa">OPERATE_RET</a> <a class="code" href="uni__mutex_8h.html#a1dc3a356b444330d9ff9c6faa2a04093">MutexTryLock</a>(<a class="code" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="code" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> MUTEX_HANDLE mutexHandle);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="tuya__cloud__error__code_8h.html#a3665964ed772250563675758836c5baa">OPERATE_RET</a> <a class="code" href="uni__mutex_8h.html#ad0f71f035bad7b213b63dd709ed769b6">MutexUnLock</a>(<a class="code" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="code" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> MUTEX_HANDLE mutexHandle);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="tuya__cloud__error__code_8h.html#a3665964ed772250563675758836c5baa">OPERATE_RET</a> <a class="code" href="uni__mutex_8h.html#ac7ebe3faf054c0bea5f0449cc6198fbe">ReleaseMutex</a>(<a class="code" href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a> <a class="code" href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> MUTEX_HANDLE mutexHandle);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="uni__mutex_8h_html_ad8fa55fda6864b819c2a903172a6001e"><div class="ttname"><a href="uni__mutex_8h.html#ad8fa55fda6864b819c2a903172a6001e">MUTEX_HANDLE</a></div><div class="ttdeci">PVOID_T MUTEX_HANDLE</div><div class="ttdef"><b>Definition:</b> uni_mutex.h:11</div></div>
+<div class="ttc" id="uni__mutex_8h_html_ad0f71f035bad7b213b63dd709ed769b6"><div class="ttname"><a href="uni__mutex_8h.html#ad0f71f035bad7b213b63dd709ed769b6">MutexUnLock</a></div><div class="ttdeci">OPERATE_RET MutexUnLock(IN CONST MUTEX_HANDLE mutexHandle)</div><div class="ttdoc">MutexUnLock 解锁一个互斥锁 </div></div>
+<div class="ttc" id="uni__mutex_8h_html_a0a15112cb94ccac3a35bdfd812437f8b"><div class="ttname"><a href="uni__mutex_8h.html#a0a15112cb94ccac3a35bdfd812437f8b">MutexLock</a></div><div class="ttdeci">OPERATE_RET MutexLock(IN CONST MUTEX_HANDLE mutexHandle)</div><div class="ttdoc">MutexLock 锁定一个互斥锁 </div></div>
+<div class="ttc" id="tuya__cloud__types_8h_html_a0c33b494a68ce28497e7ce8e5e95feff"><div class="ttname"><a href="tuya__cloud__types_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a></div><div class="ttdeci">#define CONST</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:88</div></div>
+<div class="ttc" id="tuya__cloud__types_8h_html_ac2bbd6d630a06a980d9a92ddb9a49928"><div class="ttname"><a href="tuya__cloud__types_8h.html#ac2bbd6d630a06a980d9a92ddb9a49928">IN</a></div><div class="ttdeci">#define IN</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:72</div></div>
+<div class="ttc" id="uni__mutex_8h_html_a1dc3a356b444330d9ff9c6faa2a04093"><div class="ttname"><a href="uni__mutex_8h.html#a1dc3a356b444330d9ff9c6faa2a04093">MutexTryLock</a></div><div class="ttdeci">OPERATE_RET MutexTryLock(IN CONST MUTEX_HANDLE mutexHandle)</div><div class="ttdoc">MutexTryLock 尝试锁定一个互斥锁 </div></div>
+<div class="ttc" id="tuya__cloud__error__code_8h_html_a3665964ed772250563675758836c5baa"><div class="ttname"><a href="tuya__cloud__error__code_8h.html#a3665964ed772250563675758836c5baa">OPERATE_RET</a></div><div class="ttdeci">int OPERATE_RET</div><div class="ttdef"><b>Definition:</b> tuya_cloud_error_code.h:14</div></div>
+<div class="ttc" id="tuya__cloud__types_8h_html_a16db040b42311497d8fc5a419b6f632f"><div class="ttname"><a href="tuya__cloud__types_8h.html#a16db040b42311497d8fc5a419b6f632f">PVOID_T</a></div><div class="ttdeci">void * PVOID_T</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:26</div></div>
+<div class="ttc" id="uni__mutex_8h_html_ac646d3c34d7b07a4df8e677572377e6b"><div class="ttname"><a href="uni__mutex_8h.html#ac646d3c34d7b07a4df8e677572377e6b">CreateMutexAndInit</a></div><div class="ttdeci">OPERATE_RET CreateMutexAndInit(OUT MUTEX_HANDLE *pMutexHandle)</div><div class="ttdoc">CreateMutexAndInit 创建一个互斥锁 </div></div>
+<div class="ttc" id="tuya__cloud__types_8h_html"><div class="ttname"><a href="tuya__cloud__types_8h.html">tuya_cloud_types.h</a></div></div>
+<div class="ttc" id="uni__mutex_8h_html_ac7ebe3faf054c0bea5f0449cc6198fbe"><div class="ttname"><a href="uni__mutex_8h.html#ac7ebe3faf054c0bea5f0449cc6198fbe">ReleaseMutex</a></div><div class="ttdeci">OPERATE_RET ReleaseMutex(IN CONST MUTEX_HANDLE mutexHandle)</div><div class="ttdoc">ReleaseMutex 释放一个互斥锁 </div></div>
+<div class="ttc" id="tuya__cloud__types_8h_html_aec78e7a9e90a406a56f859ee456e8eae"><div class="ttname"><a href="tuya__cloud__types_8h.html#aec78e7a9e90a406a56f859ee456e8eae">OUT</a></div><div class="ttdeci">#define OUT</div><div class="ttdef"><b>Definition:</b> tuya_cloud_types.h:76</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_66e379482d990db75200f5dafa933d0c.html">linux_anyka_iot_bs_gw_prj</a></li><li class="navelem"><a class="el" href="dir_29ba281f43f7151e86ac53d36dd99c3d.html">tuya_iot_sdk</a></li><li class="navelem"><a class="el" href="dir_3a92ad2b1a09afb6d5e0d22b4b8576e4.html">include</a></li><li class="navelem"><a class="el" href="uni__mutex_8h.html">uni_mutex.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

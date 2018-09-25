@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TUYA_IOT_SDK_linux_anyka: uni_queue.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TUYA_IOT_SDK_linux_anyka
+   &#160;<span id="projectnumber">4.0.5</span>
+   </div>
+   <div id="projectbrief">FOR_linux_anyka_</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('uni__queue_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">uni_queue.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;adapter_platform.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="uni__mutex_8h_source.html">uni_mutex.h</a>&quot;</code><br />
+</div>
+<p><a href="uni__queue_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQUEUE__CLASS.html">QUEUE_CLASS</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a80bd4af74024735959d113ca36806914"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a80bd4af74024735959d113ca36806914">QUEUE_SAFE_FUNC</a></td></tr>
+<tr class="separator:a80bd4af74024735959d113ca36806914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76ea4fb666cec40f360531d7dfe92f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a>&#160;&#160;&#160;extern</td></tr>
+<tr class="separator:ac76ea4fb666cec40f360531d7dfe92f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:afcc7e94d4b94dad271570a33b394c3b6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structQUEUE__CLASS.html">QUEUE_CLASS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a></td></tr>
+<tr class="separator:afcc7e94d4b94dad271570a33b394c3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a887b962645a667acab86a65c73af0602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> <a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a887b962645a667acab86a65c73af0602">CreateQueueObj</a> (const unsigned int queTolNum, const unsigned int queUnitSize)</td></tr>
+<tr class="separator:a887b962645a667acab86a65c73af0602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc1e08783129d43bd2483d96df0858b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#acbc1e08783129d43bd2483d96df0858b">RegisterQueueObj</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj, const unsigned char *pQueData, const unsigned int queTolNum, const unsigned int queUnitSize)</td></tr>
+<tr class="separator:acbc1e08783129d43bd2483d96df0858b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec9a6f571cb21c17d69932ed3a3a61b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a8ec9a6f571cb21c17d69932ed3a3a61b">InQueue</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj, const unsigned char *pQueUnit, const unsigned int queNum)</td></tr>
+<tr class="separator:a8ec9a6f571cb21c17d69932ed3a3a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0183c8cee515efa8a40dc7e75d89bb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#ad0183c8cee515efa8a40dc7e75d89bb4">OutQueue</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj, unsigned char *pQueUnit, const unsigned int queNum)</td></tr>
+<tr class="separator:ad0183c8cee515efa8a40dc7e75d89bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f21583b99d12acc56b07e6f1972055"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#aa6f21583b99d12acc56b07e6f1972055">GetCurFreeQueNum</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj)</td></tr>
+<tr class="separator:aa6f21583b99d12acc56b07e6f1972055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a04e372e85f65db08f519bcde663427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a4a04e372e85f65db08f519bcde663427">GetCurQueNum</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj)</td></tr>
+<tr class="separator:a4a04e372e85f65db08f519bcde663427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9907db99e74c7a29215703a616d0049a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a9907db99e74c7a29215703a616d0049a">GetQueueMember</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj, const unsigned int start, unsigned char *pQueUnit, const unsigned int queNum)</td></tr>
+<tr class="separator:a9907db99e74c7a29215703a616d0049a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6530ff1e2ce117c1b8806640069fe0af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a6530ff1e2ce117c1b8806640069fe0af">ClearQueue</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj)</td></tr>
+<tr class="separator:a6530ff1e2ce117c1b8806640069fe0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f380862ad59b31c017ab4d70f2b92d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#a6f380862ad59b31c017ab4d70f2b92d8">DelQueueMember</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj, const unsigned int queNum)</td></tr>
+<tr class="separator:a6f380862ad59b31c017ab4d70f2b92d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c22cc86272bb8a742eb8c4cca0c4fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uni__queue_8h.html#ae5c22cc86272bb8a742eb8c4cca0c4fb">ReleaseQueueObj</a> (<a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> pQueObj)</td></tr>
+<tr class="separator:ae5c22cc86272bb8a742eb8c4cca0c4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">宏定义说明</h2>
+<a id="ac76ea4fb666cec40f360531d7dfe92f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76ea4fb666cec40f360531d7dfe92f9">&#9670;&nbsp;</a></span>__UNI_QUEUE_EXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __UNI_QUEUE_EXT&#160;&#160;&#160;extern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80bd4af74024735959d113ca36806914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80bd4af74024735959d113ca36806914">&#9670;&nbsp;</a></span>QUEUE_SAFE_FUNC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_SAFE_FUNC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="afcc7e94d4b94dad271570a33b394c3b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc7e94d4b94dad271570a33b394c3b6">&#9670;&nbsp;</a></span>P_QUEUE_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef  struct <a class="el" href="structQUEUE__CLASS.html">QUEUE_CLASS</a>* <a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a6530ff1e2ce117c1b8806640069fe0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6530ff1e2ce117c1b8806640069fe0af">&#9670;&nbsp;</a></span>ClearQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char ClearQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a887b962645a667acab86a65c73af0602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887b962645a667acab86a65c73af0602">&#9670;&nbsp;</a></span>CreateQueueObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> <a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a> CreateQueueObj </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queTolNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queUnitSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f380862ad59b31c017ab4d70f2b92d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f380862ad59b31c017ab4d70f2b92d8">&#9670;&nbsp;</a></span>DelQueueMember()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char DelQueueMember </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6f21583b99d12acc56b07e6f1972055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6f21583b99d12acc56b07e6f1972055">&#9670;&nbsp;</a></span>GetCurFreeQueNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned int GetCurFreeQueNum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a04e372e85f65db08f519bcde663427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a04e372e85f65db08f519bcde663427">&#9670;&nbsp;</a></span>GetCurQueNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned int GetCurQueNum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9907db99e74c7a29215703a616d0049a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9907db99e74c7a29215703a616d0049a">&#9670;&nbsp;</a></span>GetQueueMember()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char GetQueueMember </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pQueUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ec9a6f571cb21c17d69932ed3a3a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec9a6f571cb21c17d69932ed3a3a61b">&#9670;&nbsp;</a></span>InQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char InQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>pQueUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0183c8cee515efa8a40dc7e75d89bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0183c8cee515efa8a40dc7e75d89bb4">&#9670;&nbsp;</a></span>OutQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char OutQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pQueUnit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbc1e08783129d43bd2483d96df0858b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc1e08783129d43bd2483d96df0858b">&#9670;&nbsp;</a></span>RegisterQueueObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> unsigned char RegisterQueueObj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>pQueData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queTolNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>queUnitSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5c22cc86272bb8a742eb8c4cca0c4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c22cc86272bb8a742eb8c4cca0c4fb">&#9670;&nbsp;</a></span>ReleaseQueueObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="uni__queue_8h.html#ac76ea4fb666cec40f360531d7dfe92f9">__UNI_QUEUE_EXT</a> void ReleaseQueueObj </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="uni__queue_8h.html#afcc7e94d4b94dad271570a33b394c3b6">P_QUEUE_CLASS</a>&#160;</td>
+          <td class="paramname"><em>pQueObj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cf6d034fbb8a82be17b39265b6ed736a.html">output</a></li><li class="navelem"><a class="el" href="dir_66e379482d990db75200f5dafa933d0c.html">linux_anyka_iot_bs_gw_prj</a></li><li class="navelem"><a class="el" href="dir_29ba281f43f7151e86ac53d36dd99c3d.html">tuya_iot_sdk</a></li><li class="navelem"><a class="el" href="dir_3a92ad2b1a09afb6d5e0d22b4b8576e4.html">include</a></li><li class="navelem"><a class="el" href="uni__queue_8h.html">uni_queue.h</a></li>
+    <li class="footer">制作者
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+# ROOT_DIR import from other files
+USER_LINK_FLAGS = -ldl
+USER_CFLAGS = -pie
