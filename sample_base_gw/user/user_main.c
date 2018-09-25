@@ -267,7 +267,8 @@ int main(int argc,char **argv)
         PR_ERR("tuya_iot_gw_bind_dev err1:%d \r\n",op_ret);
         return -4;
     }       
-    
+   
+   	//wait here	
     while (1) {
         sleep(5);
     }
